@@ -20,6 +20,8 @@
 		520709322CFBB53B005535D2 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709312CFBB53B005535D2 /* AccountView.swift */; };
 		520709342CFBB8F7005535D2 /* EcommerceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709332CFBB8F7005535D2 /* EcommerceModel.swift */; };
 		520709362CFBB974005535D2 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709352CFBB974005535D2 /* ProductCell.swift */; };
+		520709382CFBBB0C005535D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709372CFBBB0C005535D2 /* NetworkManager.swift */; };
+		5207093A2CFBBB31005535D2 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709392CFBBB31005535D2 /* AppErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		520709312CFBB53B005535D2 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		520709332CFBB8F7005535D2 /* EcommerceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcommerceModel.swift; sourceTree = "<group>"; };
 		520709352CFBB974005535D2 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		520709372CFBBB0C005535D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		520709392CFBBB31005535D2 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				520709312CFBB53B005535D2 /* AccountView.swift */,
 				520709332CFBB8F7005535D2 /* EcommerceModel.swift */,
 				520709352CFBB974005535D2 /* ProductCell.swift */,
+				520709372CFBBB0C005535D2 /* NetworkManager.swift */,
+				520709392CFBBB31005535D2 /* AppErrors.swift */,
 			);
 			path = Carry1stEcommerceApp;
 			sourceTree = "<group>";
@@ -275,7 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				520709382CFBBB0C005535D2 /* NetworkManager.swift in Sources */,
 				520709322CFBB53B005535D2 /* AccountView.swift in Sources */,
+				5207093A2CFBBB31005535D2 /* AppErrors.swift in Sources */,
 				520709302CFBB50F005535D2 /* CartView.swift in Sources */,
 				5207092E2CFBB4DA005535D2 /* ProductView.swift in Sources */,
 				520709042CFBB3BF005535D2 /* ContentView.swift in Sources */,
