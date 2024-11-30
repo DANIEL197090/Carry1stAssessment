@@ -9,15 +9,21 @@ import SwiftUI
 
 import SwiftUI
 struct ProductView: View {
+    @StateObject private var viewModel = ProductViewModel()
+  
     var body: some View {
         NavigationView {
-            List(MockData.sampleEcommerce) { ecommerce in
+            List(viewModel.products) { ecommerce in
                ProductCell(ecommerce: ecommerce)
             }
                 .navigationTitle("Product")
         }
+        .onAppear() {
+            viewModel.getAllProducts()
+        }
        
     }
+   
 }
 
 #Preview {

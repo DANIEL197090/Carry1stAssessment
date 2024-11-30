@@ -26,7 +26,7 @@ struct EcommerceTabView: View {
                     Text("Cart")
                 }
         }
-        .accentColor(Color("carryBlue"))
+        .accentColor(Color("carry1stBlue"))
     }
 }
 
