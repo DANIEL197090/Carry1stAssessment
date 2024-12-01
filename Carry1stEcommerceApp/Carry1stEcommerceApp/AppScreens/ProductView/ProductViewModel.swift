@@ -10,6 +10,8 @@ final class ProductViewModel: ObservableObject {
     @Published var products: [Product] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
+    @Published var  isShowingDetailsView = false
+    @Published var  selectedProduct: Product?
     
     func getAllProducts() {
         isLoading = true

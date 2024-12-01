@@ -7,11 +7,24 @@
 
 import SwiftUI
 struct CartView: View {
+    @State private var cartItems = MockData.sampleOrders
     var body: some View {
         NavigationView {
-            Text("Cart View")
-                .navigationTitle("Cart")
+            VStack {
+                List {
+                    ForEach(MockData.sampleOrders) { cart in
+                        ProductCell(ecommerce: cart)
+                    }
+                    .onDelete(perform: deleteItems)
+                }
+                .listStyle(PlainListStyle())
+            }
+            .navigationTitle("Cart")
         }
+        
+    }
+    func deleteItems(at offSets: IndexSet) {
+        cartItems.remove(atOffsets: offSets)
     }
 }
 

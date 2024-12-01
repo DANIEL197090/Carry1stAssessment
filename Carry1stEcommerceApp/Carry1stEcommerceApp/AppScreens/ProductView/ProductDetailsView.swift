@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ProductDetailsView: View {
     let product: Product
+    @Binding var isShowingDetailsView: Bool
     var body: some View {
         VStack {
-            Image("image")
-                .resizable()
+            ProductRemoteImage(urlString: product.imageLocation)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 300, height: 225)
             VStack {
@@ -40,25 +40,13 @@ struct ProductDetailsView: View {
                 Button {
                     print("ss")
                 } label: {
-                    Text("Add to Cart")
-                        .font(.title2)
-                        .fontWeight(.bold) 
-                        .foregroundColor(.white)
-                        .frame(width: 260, height: 50)
-                        .background(Color.brandPrimaryColor)
-                        .cornerRadius(30)
+                    AppButton(title: "Add to Cart")
                 }
                 
                 Button {
                     print("ss")
                 } label: {
-                    Text("Buy Now")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .frame(width: 260, height: 50)
-                        .background(Color.brandPrimaryColor)
-                        .cornerRadius(30)
+                    AppButton(title: "Buy Now")
                 }
                 .padding(.bottom, 30)
             }
@@ -68,18 +56,9 @@ struct ProductDetailsView: View {
         .cornerRadius(12)
         .shadow(radius: 40)
         .overlay( Button {
-            print("ss")
+            isShowingDetailsView = false
         } label: {
-            ZStack {
-                Circle()
-                    .frame(width: 30, height: 30)
-                    .foregroundColor(.white)
-                    .opacity(0.6)
-                Image(systemName: "xmark")
-                    .imageScale(.medium)
-                    .frame(width: 44, height: 44)
-                    .foregroundColor(.black)
-            }
+           cancelButton()
         }
                   , alignment: .topTrailing)
         
@@ -87,5 +66,5 @@ struct ProductDetailsView: View {
 }
 
 #Preview {
-    ProductDetailsView(product: MockData.sample)
+    ProductDetailsView(product: MockData.sample, isShowingDetailsView: .constant(true))
 }

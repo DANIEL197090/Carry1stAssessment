@@ -30,4 +30,35 @@ struct MockData  {
                                 imageLocation: "",
                                 status: "")
     static let sampleEcommerce = [sample, sample, sample, sample ]
+    
+    static let order1 = Product(id: 1,
+                                name: "Game 1",
+                                description: "This is a sample",
+                                price: 99.0,
+                                currencyCode: "USD",
+                                currencySymbol: "$",
+                                quantity: 1,
+                                imageLocation: "",
+                                status: "")
+    
+    static let order2 = Product(id: 2,
+                                name: "Game 2",
+                                description: "This is a sample",
+                                price: 99.0,
+                                currencyCode: "USD",
+                                currencySymbol: "$",
+                                quantity: 1,
+                                imageLocation: "",
+                                status: "")
+    
+    static let order3 = Product(id: 3,
+                                name: "Game 3",
+                                description: "This is a sample",
+                                price: 99.0,
+                                currencyCode: "USD",
+                                currencySymbol: "$",
+                                quantity: 1,
+                                imageLocation: "",
+                                status: "")
+    static let sampleOrders = [order1, order2, order3]
 }
