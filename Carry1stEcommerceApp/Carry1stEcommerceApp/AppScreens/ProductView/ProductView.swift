@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-
-import SwiftUI
 struct ProductView: View {
     @StateObject private var viewModel = ProductViewModel()
    
@@ -15,7 +13,7 @@ struct ProductView: View {
         ZStack {
             NavigationView {
                 List(viewModel.products) { ecommerce in
-                   ProductCell(ecommerce: ecommerce)
+                   ProductCell(ecommerce: ecommerce, showDeleteButton: false)
                         .onTapGesture {
                             viewModel.selectedProduct = ecommerce
                             viewModel.isShowingDetailsView = true

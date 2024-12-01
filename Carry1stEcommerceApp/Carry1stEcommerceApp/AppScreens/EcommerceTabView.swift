@@ -8,23 +8,18 @@
 import SwiftUI
 
 struct EcommerceTabView: View {
+    @EnvironmentObject var cartItems: Order
     var body: some View {
         TabView {
             ProductView()
                 .tabItem { Label("Products", systemImage: "house")}
             AccountView()
-                .tabItem {
-                    Label("Account", systemImage: "person")
-                    Image(systemName: "person")
-                    Text("Account")
-                }
+                .tabItem {Label("Account", systemImage: "person")}
             CartView()
-                .tabItem {
-                    Image(systemName: "bag")
-                    Text("Cart")
-                }
+                .tabItem { Label("Cart", systemImage:"bag")}
+                .badge(cartItems.items.count)
         }
-        .accentColor(Color("carry1stBlue"))
+        .accentColor(Color.brandPrimaryColor)
     }
 }
 
