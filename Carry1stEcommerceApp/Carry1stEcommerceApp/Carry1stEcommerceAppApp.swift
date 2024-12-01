@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Carry1stEcommerceAppApp: App {
+    var order = Order()
     var body: some Scene {
         WindowGroup {
-            EcommerceTabView()
+            EcommerceTabView().environmentObject(order)
         }
     }
 }

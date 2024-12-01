@@ -7,27 +7,38 @@
 
 import SwiftUI
 struct CartView: View {
-    @State private var cartItems = MockData.sampleOrders
+    @EnvironmentObject var cartItems: Order
     var body: some View {
         NavigationView {
-            VStack {
-                List {
-                    ForEach(MockData.sampleOrders) { cart in
-                        ProductCell(ecommerce: cart)
+            ZStack {
+                VStack {
+                    List {
+                        ForEach(cartItems.items) { cart in
+                            ProductCell(ecommerce: cart)
+                        }
+                        .onDelete(perform: cartItems.deleteItems)
                     }
-                    .onDelete(perform: deleteItems)
+                    .listStyle(PlainListStyle())
+                    
+                    Button {
+                        print()
+                    } label: {
+                        AppButton(title: "$\(cartItems.totalPrice, specifier: "%.2f") - Place Order(s)")
+                    }
+                    .padding(.bottom , 25)
                 }
-                .listStyle(PlainListStyle())
+                if cartItems.items.isEmpty {
+                    EmptyState(imageName: "empty-order", message: "Your have no items in your cart.\nPlease go shopping.")
+                }
             }
             .navigationTitle("Cart")
         }
         
     }
-    func deleteItems(at offSets: IndexSet) {
-        cartItems.remove(atOffsets: offSets)
-    }
+   
 }
 
 #Preview {
     CartView()
 }
+

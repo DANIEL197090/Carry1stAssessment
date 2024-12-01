@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProductDetailsView: View {
+    @EnvironmentObject var order: Order
     let product: Product
     @Binding var isShowingDetailsView: Bool
     var body: some View {
@@ -38,7 +39,8 @@ struct ProductDetailsView: View {
             Spacer().frame(height: 40)
             VStack() {
                 Button {
-                    print("ss")
+                    order.add(product)
+                    isShowingDetailsView = false
                 } label: {
                     AppButton(title: "Add to Cart")
                 }

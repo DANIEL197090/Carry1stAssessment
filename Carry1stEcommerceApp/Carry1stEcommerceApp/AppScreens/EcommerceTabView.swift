@@ -11,12 +11,10 @@ struct EcommerceTabView: View {
     var body: some View {
         TabView {
             ProductView()
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Products")
-                }
+                .tabItem { Label("Products", systemImage: "house")}
             AccountView()
                 .tabItem {
+                    Label("Account", systemImage: "person")
                     Image(systemName: "person")
                     Text("Account")
                 }
