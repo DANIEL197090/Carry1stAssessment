@@ -23,6 +23,9 @@
 		520709382CFBBB0C005535D2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709372CFBBB0C005535D2 /* NetworkManager.swift */; };
 		5207093A2CFBBB31005535D2 /* AppErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709392CFBBB31005535D2 /* AppErrors.swift */; };
 		5207093E2CFBC6D2005535D2 /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5207093D2CFBC6D2005535D2 /* ProductViewModel.swift */; };
+		520709422CFBC84B005535D2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709412CFBC84B005535D2 /* Alert.swift */; };
+		520709482CFC199A005535D2 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709472CFC199A005535D2 /* Loader.swift */; };
+		5207094A2CFC1A7F005535D2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520709492CFC1A7E005535D2 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		520709372CFBBB0C005535D2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		520709392CFBBB31005535D2 /* AppErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppErrors.swift; sourceTree = "<group>"; };
 		5207093D2CFBC6D2005535D2 /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		520709412CFBC84B005535D2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		520709472CFC199A005535D2 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		520709492CFC1A7E005535D2 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,9 @@
 				520709372CFBBB0C005535D2 /* NetworkManager.swift */,
 				520709392CFBBB31005535D2 /* AppErrors.swift */,
 				5207093D2CFBC6D2005535D2 /* ProductViewModel.swift */,
+				520709412CFBC84B005535D2 /* Alert.swift */,
+				520709472CFC199A005535D2 /* Loader.swift */,
+				520709492CFC1A7E005535D2 /* AppColors.swift */,
 			);
 			path = Carry1stEcommerceApp;
 			sourceTree = "<group>";
@@ -290,9 +299,12 @@
 				520709302CFBB50F005535D2 /* CartView.swift in Sources */,
 				5207092E2CFBB4DA005535D2 /* ProductView.swift in Sources */,
 				520709042CFBB3BF005535D2 /* ContentView.swift in Sources */,
+				520709422CFBC84B005535D2 /* Alert.swift in Sources */,
 				5207093E2CFBC6D2005535D2 /* ProductViewModel.swift in Sources */,
 				520709342CFBB8F7005535D2 /* EcommerceModel.swift in Sources */,
+				520709482CFC199A005535D2 /* Loader.swift in Sources */,
 				520709362CFBB974005535D2 /* ProductCell.swift in Sources */,
+				5207094A2CFC1A7F005535D2 /* AppColors.swift in Sources */,
 				5207092C2CFBB3F9005535D2 /* EcommerceTabView.swift in Sources */,
 				520709022CFBB3BF005535D2 /* Carry1stEcommerceAppApp.swift in Sources */,
 			);
