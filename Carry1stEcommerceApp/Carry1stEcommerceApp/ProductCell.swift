@@ -11,8 +11,7 @@ struct ProductCell: View {
     var ecommerce: Product
     var body: some View {
         HStack {
-            Image("asian-flank-steak")
-                .resizable()
+            ProductRemoteImage(urlString: ecommerce.imageLocation)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 120, height: 90)
                 .cornerRadius(9)
