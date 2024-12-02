@@ -10,12 +10,18 @@ final class ProductViewModel: ObservableObject {
     @Published var products: [Product] = []
     @Published var alertItem: AlertItem?
     @Published var isLoading = false
-    @Published var  isShowingDetailsView = false
-    @Published var  selectedProduct: Product?
+    @Published var isShowingDetailsView = false
+    @Published var selectedProduct: Product?
+    
+    private let networkService: NetworkService
+    
+    init(networkService: NetworkService = NetworkManager.shared) {
+        self.networkService = networkService
+    }
     
     func getAllProducts() {
         isLoading = true
-        NetworkManager.shared.getAllProducts { result in
+        networkService.getAllProducts { result in
             DispatchQueue.main.async { [self] in
                 isLoading = false
                 switch result {

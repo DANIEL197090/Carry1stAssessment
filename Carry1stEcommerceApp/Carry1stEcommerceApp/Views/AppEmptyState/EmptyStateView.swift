@@ -6,12 +6,7 @@
 //
 
 import SwiftUI
-
-import SwiftUI
-
-
 struct EmptyState: View {
-    
     let imageName: String
     let message: String
     var body: some View {

@@ -1,6 +1,5 @@
 # Carry1stAssessment
 
-
 Welcome to the guide for our eCommerce app! This app is a simple prototype built using Swift and SwiftUI. It demonstrates a product listing, detailed product views, and cart functionality. Below, you’ll find everything you need to understand the project, its usage, and why certain decisions were made.
 
 Project Overview

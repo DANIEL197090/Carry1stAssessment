@@ -7,8 +7,12 @@
 
 import SwiftUI
 struct ProductView: View {
-    @StateObject private var viewModel = ProductViewModel()
-   
+    @StateObject private var viewModel: ProductViewModel
+
+        init(viewModel: ProductViewModel) {
+            _viewModel = StateObject(wrappedValue: viewModel)
+        }
+
     var body: some View {
         ZStack {
             NavigationView {
@@ -42,5 +46,6 @@ struct ProductView: View {
 }
 
 #Preview {
-    ProductView()
+    let mockViewModel = ProductViewModel(networkService: MockNetworkService())
+    return ProductView(viewModel: mockViewModel)
 }
