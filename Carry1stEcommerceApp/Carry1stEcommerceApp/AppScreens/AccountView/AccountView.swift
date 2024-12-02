@@ -30,12 +30,6 @@ struct AccountView: View {
                     
                 }
                 
-                Section(header:  Text("Personal Info")) {
-                    Toggle("Extra Napkins", isOn: $viewModel.user.extraNapkins)
-                    Toggle("Extra Napkins", isOn: $viewModel.user.frequentRefills)
-                        .toggleStyle(SwitchToggleStyle(tint: Color.brandPrimaryColor))
-                    
-                }
             }
             .onAppear() {
                 viewModel.retrieveUser()
