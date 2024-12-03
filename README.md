@@ -100,14 +100,17 @@ Add animations and improve styling for a polished experience.
 Testing
 Unit Tests:
 
-Tested API calls and cart functionality.
-Mocked API responses for reliable testing.
+Tested adding to cart
+Tested deleting from cart
+Tested totap price of items
 
-UI Tests:
-Verified navigation between product listing, details, and cart.
+Tests Improvements
+Tested API calls and cart functionality.
+Mocked API responses for reliable testing
 
 Closing Notes
 This prototype serves as a functional demo of an eCommerce platform, showcasing essential features like listing, details, and cart management. It’s designed to be a starting point for further development and refinement.
+
 Happy coding! 🚀
 
 ![WhatsApp Image 2024-12-03 at 03 14 16](https://github.com/user-attachments/assets/031d2324-da38-4144-bcd9-c4d0a939e3ea)
