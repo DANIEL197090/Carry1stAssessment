@@ -105,7 +105,7 @@ Tested deleting from cart,
 Tested total price of items.
 
 Tests Improvements
-Tested API calls and cart functionality.
+API calls and cart functionality.
 Mocked API responses for reliable testing
 
 Closing Notes
