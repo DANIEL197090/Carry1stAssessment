@@ -79,7 +79,7 @@ Prioritizes functionality over detailed UI design.
 Performance Optimizations
 
 Image Loading:
-Used Kingfisher for asynchronous image downloading and caching.
+Used cache object for asynchronous image downloading and caching.
 
 State Management:
 Leveraged @StateObject and @EnvironmentObject to optimize re-renders.
