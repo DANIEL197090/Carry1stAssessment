@@ -100,9 +100,9 @@ Add animations and improve styling for a polished experience.
 Testing
 Unit Tests:
 
-Tested adding to cart
-Tested deleting from cart
-Tested totap price of items
+Tested adding to cart,
+Tested deleting from cart,
+Tested total price of items.
 
 Tests Improvements
 Tested API calls and cart functionality.
