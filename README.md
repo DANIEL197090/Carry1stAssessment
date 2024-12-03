@@ -1,6 +1,4 @@
-![WhatsApp Image 2024-12-03 at 03 07 46](https://github.com/user-attachments/assets/529aaf9a-dbab-44ed-b6f4-42682eb4c9b2)
-![WhatsApp Image 2024-12-03 at 03 08 10](https://github.com/user-attachments/assets/1024ec7b-50de-45e5-92d8-e27fc487e0f1)
-![WhatsApp Image 2024-12-03 at 03 08 45](https://github.com/user-attachments/assets/36402472-ea2e-444e-aafb-640795c2dcc8)
+
 # Carry1stAssessment
 
 Welcome to the guide for our eCommerce app! This app is a simple prototype built using Swift and SwiftUI. It demonstrates a product listing, detailed product views, and cart functionality. Below, you’ll find everything you need to understand the project, its usage, and why certain decisions were made.
@@ -111,3 +109,11 @@ Verified navigation between product listing, details, and cart.
 Closing Notes
 This prototype serves as a functional demo of an eCommerce platform, showcasing essential features like listing, details, and cart management. It’s designed to be a starting point for further development and refinement.
 Happy coding! 🚀
+
+![WhatsApp Image 2024-12-03 at 03 14 16](https://github.com/user-attachments/assets/031d2324-da38-4144-bcd9-c4d0a939e3ea)
+![WhatsApp Image 2024-12-03 at 03 13 36](https://github.com/user-attachments/assets/dca054c1-9da1-4f72-928b-9873e4a58b5a)
+![WhatsApp Image 2024-12-03 at 03 13 56](https://github.com/user-attachments/assets/d62f918e-9322-49f8-884e-daf731813922)
+
+![WhatsApp Image 2024-12-03 at 03 07 46](https://github.com/user-attachments/assets/529aaf9a-dbab-44ed-b6f4-42682eb4c9b2)
+![WhatsApp Image 2024-12-03 at 03 08 10](https://github.com/user-attachments/assets/1024ec7b-50de-45e5-92d8-e27fc487e0f1)
+![WhatsApp Image 2024-12-03 at 03 08 45](https://github.com/user-attachments/assets/36402472-ea2e-444e-aafb-640795c2dcc8)
