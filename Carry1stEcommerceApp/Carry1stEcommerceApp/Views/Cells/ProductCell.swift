@@ -23,7 +23,7 @@ struct ProductCell: View {
                 Text(ecommerce.name)
                     .font(.title2)
                     .fontWeight(.medium)
-                
+                    .accessibilityIdentifier("ProductName")
                 Text("\(ecommerce.currencySymbol)\(ecommerce.price, specifier: "%.2f")")
                     .foregroundColor(.secondary)
                     .fontWeight(.semibold)
